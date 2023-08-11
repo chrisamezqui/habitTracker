@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83E644272A831D1C0017496D /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E644262A831D1C0017496D /* HabitTrackerTests.swift */; };
+		83E644312A831D1C0017496D /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E644302A831D1C0017496D /* HabitTrackerUITests.swift */; };
+		83E644332A831D1C0017496D /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E644322A831D1C0017496D /* HabitTrackerUITestsLaunchTests.swift */; };
+		83E646EA2A84BFCA0017496D /* CreateHabitMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646D62A84BFCA0017496D /* CreateHabitMutation.graphql.swift */; };
+		83E646EB2A84BFCA0017496D /* DeleteHabitMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646D72A84BFCA0017496D /* DeleteHabitMutation.graphql.swift */; };
+		83E646EC2A84BFCA0017496D /* RemoveHabitFromRoutineMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646D82A84BFCA0017496D /* RemoveHabitFromRoutineMutation.graphql.swift */; };
+		83E646ED2A84BFCA0017496D /* AddHabitToRoutineMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646D92A84BFCA0017496D /* AddHabitToRoutineMutation.graphql.swift */; };
+		83E646EE2A84BFCA0017496D /* UpdateHabitMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646DA2A84BFCA0017496D /* UpdateHabitMutation.graphql.swift */; };
+		83E646EF2A84BFCA0017496D /* CompleteHabitMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646DB2A84BFCA0017496D /* CompleteHabitMutation.graphql.swift */; };
+		83E646F02A84BFCA0017496D /* GetRoutinesListQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646DD2A84BFCA0017496D /* GetRoutinesListQuery.graphql.swift */; };
+		83E646F12A84BFCA0017496D /* GetHabitsListQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646DE2A84BFCA0017496D /* GetHabitsListQuery.graphql.swift */; };
+		83E646F22A84BFCA0017496D /* HabitTrackerSchema.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646DF2A84BFCA0017496D /* HabitTrackerSchema.graphql.swift */; };
+		83E646F32A84BFCA0017496D /* HabitResult.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E22A84BFCA0017496D /* HabitResult.graphql.swift */; };
+		83E646F42A84BFCA0017496D /* Habit.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E32A84BFCA0017496D /* Habit.graphql.swift */; };
+		83E646F52A84BFCA0017496D /* Routine.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E42A84BFCA0017496D /* Routine.graphql.swift */; };
+		83E646F62A84BFCA0017496D /* Mutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E52A84BFCA0017496D /* Mutation.graphql.swift */; };
+		83E646F72A84BFCA0017496D /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E62A84BFCA0017496D /* Query.graphql.swift */; };
+		83E646F82A84BFCA0017496D /* RoutineResult.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E72A84BFCA0017496D /* RoutineResult.graphql.swift */; };
+		83E646F92A84BFCA0017496D /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E82A84BFCA0017496D /* SchemaConfiguration.swift */; };
+		83E646FA2A84BFCA0017496D /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E646E92A84BFCA0017496D /* SchemaMetadata.graphql.swift */; };
+		83E6479B2A84C20E0017496D /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6477C2A84C20D0017496D /* HabitListViewModel.swift */; };
+		83E6479D2A84C20E0017496D /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6477F2A84C20D0017496D /* UIColor.swift */; };
+		83E647A02A84C20E0017496D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647832A84C20D0017496D /* AppDelegate.swift */; };
+		83E647A12A84C20E0017496D /* RoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647852A84C20D0017496D /* RoutinesViewController.swift */; };
+		83E647A32A84C20E0017496D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647872A84C20D0017496D /* MainTabBarViewController.swift */; };
+		83E647A42A84C20E0017496D /* HabitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647882A84C20D0017496D /* HabitListViewController.swift */; };
+		83E647A52A84C20E0017496D /* HabitCloseupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647892A84C20D0017496D /* HabitCloseupViewController.swift */; };
+		83E647A62A84C20E0017496D /* RoutinesCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6478B2A84C20D0017496D /* RoutinesCollectionHeaderView.swift */; };
+		83E647A72A84C20E0017496D /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6478C2A84C20D0017496D /* PlaceholderTextView.swift */; };
+		83E647A82A84C20E0017496D /* HabitSummaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6478D2A84C20D0017496D /* HabitSummaryCollectionViewCell.swift */; };
+		83E647A92A84C20E0017496D /* HabitCloseupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6478E2A84C20D0017496D /* HabitCloseupView.swift */; };
+		83E647AA2A84C20E0017496D /* RoutinesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6478F2A84C20D0017496D /* RoutinesCollectionViewCell.swift */; };
+		83E647AB2A84C20E0017496D /* RoutinesCollectionViewAddCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647902A84C20D0017496D /* RoutinesCollectionViewAddCell.swift */; };
+		83E647AC2A84C20E0017496D /* HabitSummaryCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647912A84C20D0017496D /* HabitSummaryCollectionHeaderView.swift */; };
+		83E647AD2A84C20E0017496D /* RoutineHeaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647932A84C20D0017496D /* RoutineHeaderDelegate.swift */; };
+		83E647AE2A84C20E0017496D /* HabitCloseupViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647942A84C20D0017496D /* HabitCloseupViewDelegate.swift */; };
+		83E647AF2A84C20E0017496D /* HabitCloseupViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647952A84C20D0017496D /* HabitCloseupViewControllerDelegate.swift */; };
+		83E647B02A84C20E0017496D /* RoutineCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647962A84C20D0017496D /* RoutineCellDelegate.swift */; };
+		83E647B12A84C20E0017496D /* HabitListViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647972A84C20D0017496D /* HabitListViewControllerDelegate.swift */; };
+		83E647B22A84C20E0017496D /* HabitSummaryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647982A84C20D0017496D /* HabitSummaryDelegate.swift */; };
+		83E647B42A84C20E0017496D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E6479A2A84C20D0017496D /* SceneDelegate.swift */; };
+		83E647C12A86A21A0017496D /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647C02A86A21A0017496D /* APIClientProtocol.swift */; };
+		83E647C52A86A5E50017496D /* ApolloAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647C42A86A5E50017496D /* ApolloAPIClient.swift */; };
+		83E647C72A86A6810017496D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647C62A86A6810017496D /* Constants.swift */; };
+		83E647C92A86AAC50017496D /* ModelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647C82A86AAC50017496D /* ModelTypes.swift */; };
+		83E647CB2A86ADCB0017496D /* HabitListUpdateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E647CA2A86ADCA0017496D /* HabitListUpdateManager.swift */; };
+		9D3B50029EEAF32E8A59228A /* Pods_HabitTrackerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73925CDCA217FF66FE873800 /* Pods_HabitTrackerTests.framework */; };
+		B137BD46E32E00095DE09C3A /* Pods_HabitTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15921329424EC57860DFDB0 /* Pods_HabitTracker.framework */; };
+		B6A056E9C01768E14200594E /* Pods_HabitTracker_HabitTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D226E7A9DC31CC84BB09D4FE /* Pods_HabitTracker_HabitTrackerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83E644232A831D1C0017496D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E644042A831D1B0017496D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E6440B2A831D1B0017496D;
+			remoteInfo = HabitTracker;
+		};
+		83E6442D2A831D1C0017496D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E644042A831D1B0017496D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E6440B2A831D1B0017496D;
+			remoteInfo = HabitTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		148184C28120CDADCA15B5D4 /* Pods-HabitTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTracker.debug.xcconfig"; path = "Target Support Files/Pods-HabitTracker/Pods-HabitTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		23E5F12E305993781C3943B7 /* Pods-HabitTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTrackerTests.debug.xcconfig"; path = "Target Support Files/Pods-HabitTrackerTests/Pods-HabitTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67520D25D8A45541E88627F0 /* Pods-HabitTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTracker.release.xcconfig"; path = "Target Support Files/Pods-HabitTracker/Pods-HabitTracker.release.xcconfig"; sourceTree = "<group>"; };
+		73925CDCA217FF66FE873800 /* Pods_HabitTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitTrackerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E79AE71275667CA4F530FA5 /* Pods-HabitTracker-HabitTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTracker-HabitTrackerUITests.release.xcconfig"; path = "Target Support Files/Pods-HabitTracker-HabitTrackerUITests/Pods-HabitTracker-HabitTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83E6440C2A831D1B0017496D /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E644222A831D1C0017496D /* HabitTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E644262A831D1C0017496D /* HabitTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerTests.swift; sourceTree = "<group>"; };
+		83E6442C2A831D1C0017496D /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E644302A831D1C0017496D /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
+		83E644322A831D1C0017496D /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83E644682A831F120017496D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		83E6448E2A831F870017496D /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
+		83E646D62A84BFCA0017496D /* CreateHabitMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateHabitMutation.graphql.swift; sourceTree = "<group>"; };
+		83E646D72A84BFCA0017496D /* DeleteHabitMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteHabitMutation.graphql.swift; sourceTree = "<group>"; };
+		83E646D82A84BFCA0017496D /* RemoveHabitFromRoutineMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoveHabitFromRoutineMutation.graphql.swift; sourceTree = "<group>"; };
+		83E646D92A84BFCA0017496D /* AddHabitToRoutineMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHabitToRoutineMutation.graphql.swift; sourceTree = "<group>"; };
+		83E646DA2A84BFCA0017496D /* UpdateHabitMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateHabitMutation.graphql.swift; sourceTree = "<group>"; };
+		83E646DB2A84BFCA0017496D /* CompleteHabitMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteHabitMutation.graphql.swift; sourceTree = "<group>"; };
+		83E646DD2A84BFCA0017496D /* GetRoutinesListQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetRoutinesListQuery.graphql.swift; sourceTree = "<group>"; };
+		83E646DE2A84BFCA0017496D /* GetHabitsListQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHabitsListQuery.graphql.swift; sourceTree = "<group>"; };
+		83E646DF2A84BFCA0017496D /* HabitTrackerSchema.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitTrackerSchema.graphql.swift; sourceTree = "<group>"; };
+		83E646E22A84BFCA0017496D /* HabitResult.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitResult.graphql.swift; sourceTree = "<group>"; };
+		83E646E32A84BFCA0017496D /* Habit.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.graphql.swift; sourceTree = "<group>"; };
+		83E646E42A84BFCA0017496D /* Routine.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routine.graphql.swift; sourceTree = "<group>"; };
+		83E646E52A84BFCA0017496D /* Mutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.graphql.swift; sourceTree = "<group>"; };
+		83E646E62A84BFCA0017496D /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		83E646E72A84BFCA0017496D /* RoutineResult.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineResult.graphql.swift; sourceTree = "<group>"; };
+		83E646E82A84BFCA0017496D /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		83E646E92A84BFCA0017496D /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		83E6477C2A84C20D0017496D /* HabitListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitListViewModel.swift; sourceTree = "<group>"; };
+		83E6477D2A84C20D0017496D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83E6477F2A84C20D0017496D /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		83E647812A84C20D0017496D /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		83E647822A84C20D0017496D /* operations.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = operations.graphql; sourceTree = "<group>"; };
+		83E647832A84C20D0017496D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83E647852A84C20D0017496D /* RoutinesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinesViewController.swift; sourceTree = "<group>"; };
+		83E647872A84C20D0017496D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		83E647882A84C20D0017496D /* HabitListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitListViewController.swift; sourceTree = "<group>"; };
+		83E647892A84C20D0017496D /* HabitCloseupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCloseupViewController.swift; sourceTree = "<group>"; };
+		83E6478B2A84C20D0017496D /* RoutinesCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinesCollectionHeaderView.swift; sourceTree = "<group>"; };
+		83E6478C2A84C20D0017496D /* PlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
+		83E6478D2A84C20D0017496D /* HabitSummaryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitSummaryCollectionViewCell.swift; sourceTree = "<group>"; };
+		83E6478E2A84C20D0017496D /* HabitCloseupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCloseupView.swift; sourceTree = "<group>"; };
+		83E6478F2A84C20D0017496D /* RoutinesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinesCollectionViewCell.swift; sourceTree = "<group>"; };
+		83E647902A84C20D0017496D /* RoutinesCollectionViewAddCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutinesCollectionViewAddCell.swift; sourceTree = "<group>"; };
+		83E647912A84C20D0017496D /* HabitSummaryCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitSummaryCollectionHeaderView.swift; sourceTree = "<group>"; };
+		83E647932A84C20D0017496D /* RoutineHeaderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineHeaderDelegate.swift; sourceTree = "<group>"; };
+		83E647942A84C20D0017496D /* HabitCloseupViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCloseupViewDelegate.swift; sourceTree = "<group>"; };
+		83E647952A84C20D0017496D /* HabitCloseupViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCloseupViewControllerDelegate.swift; sourceTree = "<group>"; };
+		83E647962A84C20D0017496D /* RoutineCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineCellDelegate.swift; sourceTree = "<group>"; };
+		83E647972A84C20D0017496D /* HabitListViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitListViewControllerDelegate.swift; sourceTree = "<group>"; };
+		83E647982A84C20D0017496D /* HabitSummaryDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitSummaryDelegate.swift; sourceTree = "<group>"; };
+		83E647992A84C20D0017496D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E6479A2A84C20D0017496D /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		83E647C02A86A21A0017496D /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		83E647C42A86A5E50017496D /* ApolloAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloAPIClient.swift; sourceTree = "<group>"; };
+		83E647C62A86A6810017496D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83E647C82A86AAC50017496D /* ModelTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTypes.swift; sourceTree = "<group>"; };
+		83E647CA2A86ADCA0017496D /* HabitListUpdateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListUpdateManager.swift; sourceTree = "<group>"; };
+		9B082B2D0A2E154A597B367A /* Pods-HabitTracker-HabitTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTracker-HabitTrackerUITests.debug.xcconfig"; path = "Target Support Files/Pods-HabitTracker-HabitTrackerUITests/Pods-HabitTracker-HabitTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D226E7A9DC31CC84BB09D4FE /* Pods_HabitTracker_HabitTrackerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitTracker_HabitTrackerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D22D3D90FDCA2A80A431C8CA /* Pods-HabitTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HabitTrackerTests.release.xcconfig"; path = "Target Support Files/Pods-HabitTrackerTests/Pods-HabitTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		F15921329424EC57860DFDB0 /* Pods_HabitTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HabitTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83E644092A831D1B0017496D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B137BD46E32E00095DE09C3A /* Pods_HabitTracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E6441F2A831D1C0017496D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3B50029EEAF32E8A59228A /* Pods_HabitTrackerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E644292A831D1C0017496D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6A056E9C01768E14200594E /* Pods_HabitTracker_HabitTrackerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3104668FAB63E3FB225FB7CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F15921329424EC57860DFDB0 /* Pods_HabitTracker.framework */,
+				D226E7A9DC31CC84BB09D4FE /* Pods_HabitTracker_HabitTrackerUITests.framework */,
+				73925CDCA217FF66FE873800 /* Pods_HabitTrackerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53CC4641C9147DD1159D1D2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				148184C28120CDADCA15B5D4 /* Pods-HabitTracker.debug.xcconfig */,
+				67520D25D8A45541E88627F0 /* Pods-HabitTracker.release.xcconfig */,
+				9B082B2D0A2E154A597B367A /* Pods-HabitTracker-HabitTrackerUITests.debug.xcconfig */,
+				7E79AE71275667CA4F530FA5 /* Pods-HabitTracker-HabitTrackerUITests.release.xcconfig */,
+				23E5F12E305993781C3943B7 /* Pods-HabitTrackerTests.debug.xcconfig */,
+				D22D3D90FDCA2A80A431C8CA /* Pods-HabitTrackerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		83E644032A831D1B0017496D = {
+			isa = PBXGroup;
+			children = (
+				83E6477A2A84C20D0017496D /* HabitTracker */,
+				83E646D32A84BFCA0017496D /* HabitTrackerSchema */,
+				83E6448E2A831F870017496D /* apollo-codegen-config.json */,
+				83E644682A831F120017496D /* Podfile */,
+				83E644252A831D1C0017496D /* HabitTrackerTests */,
+				83E6442F2A831D1C0017496D /* HabitTrackerUITests */,
+				83E6440D2A831D1B0017496D /* Products */,
+				53CC4641C9147DD1159D1D2D /* Pods */,
+				3104668FAB63E3FB225FB7CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83E6440D2A831D1B0017496D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83E6440C2A831D1B0017496D /* HabitTracker.app */,
+				83E644222A831D1C0017496D /* HabitTrackerTests.xctest */,
+				83E6442C2A831D1C0017496D /* HabitTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83E644252A831D1C0017496D /* HabitTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				83E644262A831D1C0017496D /* HabitTrackerTests.swift */,
+			);
+			path = HabitTrackerTests;
+			sourceTree = "<group>";
+		};
+		83E6442F2A831D1C0017496D /* HabitTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83E644302A831D1C0017496D /* HabitTrackerUITests.swift */,
+				83E644322A831D1C0017496D /* HabitTrackerUITestsLaunchTests.swift */,
+			);
+			path = HabitTrackerUITests;
+			sourceTree = "<group>";
+		};
+		83E646D32A84BFCA0017496D /* HabitTrackerSchema */ = {
+			isa = PBXGroup;
+			children = (
+				83E646D42A84BFCA0017496D /* Operations */,
+				83E646DF2A84BFCA0017496D /* HabitTrackerSchema.graphql.swift */,
+				83E646E02A84BFCA0017496D /* Schema */,
+			);
+			path = HabitTrackerSchema;
+			sourceTree = "<group>";
+		};
+		83E646D42A84BFCA0017496D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				83E646D52A84BFCA0017496D /* Mutations */,
+				83E646DC2A84BFCA0017496D /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		83E646D52A84BFCA0017496D /* Mutations */ = {
+			isa = PBXGroup;
+			children = (
+				83E646D62A84BFCA0017496D /* CreateHabitMutation.graphql.swift */,
+				83E646D72A84BFCA0017496D /* DeleteHabitMutation.graphql.swift */,
+				83E646D82A84BFCA0017496D /* RemoveHabitFromRoutineMutation.graphql.swift */,
+				83E646D92A84BFCA0017496D /* AddHabitToRoutineMutation.graphql.swift */,
+				83E646DA2A84BFCA0017496D /* UpdateHabitMutation.graphql.swift */,
+				83E646DB2A84BFCA0017496D /* CompleteHabitMutation.graphql.swift */,
+			);
+			path = Mutations;
+			sourceTree = "<group>";
+		};
+		83E646DC2A84BFCA0017496D /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				83E646DD2A84BFCA0017496D /* GetRoutinesListQuery.graphql.swift */,
+				83E646DE2A84BFCA0017496D /* GetHabitsListQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		83E646E02A84BFCA0017496D /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				83E646E12A84BFCA0017496D /* Objects */,
+				83E646E82A84BFCA0017496D /* SchemaConfiguration.swift */,
+				83E646E92A84BFCA0017496D /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		83E646E12A84BFCA0017496D /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				83E646E22A84BFCA0017496D /* HabitResult.graphql.swift */,
+				83E646E32A84BFCA0017496D /* Habit.graphql.swift */,
+				83E646E42A84BFCA0017496D /* Routine.graphql.swift */,
+				83E646E52A84BFCA0017496D /* Mutation.graphql.swift */,
+				83E646E62A84BFCA0017496D /* Query.graphql.swift */,
+				83E646E72A84BFCA0017496D /* RoutineResult.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		83E6477A2A84C20D0017496D /* HabitTracker */ = {
+			isa = PBXGroup;
+			children = (
+				83E647C22A86A22E0017496D /* APIClients */,
+				83E6477B2A84C20D0017496D /* ViewModels */,
+				83E6477D2A84C20D0017496D /* Assets.xcassets */,
+				83E6477E2A84C20D0017496D /* Extensions */,
+				83E647802A84C20D0017496D /* GraphQL */,
+				83E647832A84C20D0017496D /* AppDelegate.swift */,
+				83E647842A84C20D0017496D /* Controllers */,
+				83E6478A2A84C20D0017496D /* Views */,
+				83E647922A84C20D0017496D /* Protocols */,
+				83E647992A84C20D0017496D /* Info.plist */,
+				83E6479A2A84C20D0017496D /* SceneDelegate.swift */,
+			);
+			path = HabitTracker;
+			sourceTree = "<group>";
+		};
+		83E6477B2A84C20D0017496D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				83E6477C2A84C20D0017496D /* HabitListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		83E6477E2A84C20D0017496D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83E6477F2A84C20D0017496D /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83E647802A84C20D0017496D /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				83E647812A84C20D0017496D /* schema.graphqls */,
+				83E647822A84C20D0017496D /* operations.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		83E647842A84C20D0017496D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83E647852A84C20D0017496D /* RoutinesViewController.swift */,
+				83E647872A84C20D0017496D /* MainTabBarViewController.swift */,
+				83E647882A84C20D0017496D /* HabitListViewController.swift */,
+				83E647892A84C20D0017496D /* HabitCloseupViewController.swift */,
+				83E647C82A86AAC50017496D /* ModelTypes.swift */,
+				83E647CA2A86ADCA0017496D /* HabitListUpdateManager.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		83E6478A2A84C20D0017496D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83E6478B2A84C20D0017496D /* RoutinesCollectionHeaderView.swift */,
+				83E6478C2A84C20D0017496D /* PlaceholderTextView.swift */,
+				83E6478D2A84C20D0017496D /* HabitSummaryCollectionViewCell.swift */,
+				83E6478E2A84C20D0017496D /* HabitCloseupView.swift */,
+				83E6478F2A84C20D0017496D /* RoutinesCollectionViewCell.swift */,
+				83E647902A84C20D0017496D /* RoutinesCollectionViewAddCell.swift */,
+				83E647912A84C20D0017496D /* HabitSummaryCollectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83E647922A84C20D0017496D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83E647932A84C20D0017496D /* RoutineHeaderDelegate.swift */,
+				83E647942A84C20D0017496D /* HabitCloseupViewDelegate.swift */,
+				83E647952A84C20D0017496D /* HabitCloseupViewControllerDelegate.swift */,
+				83E647962A84C20D0017496D /* RoutineCellDelegate.swift */,
+				83E647972A84C20D0017496D /* HabitListViewControllerDelegate.swift */,
+				83E647982A84C20D0017496D /* HabitSummaryDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83E647BF2A86A1F20017496D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				83E647C02A86A21A0017496D /* APIClientProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		83E647C22A86A22E0017496D /* APIClients */ = {
+			isa = PBXGroup;
+			children = (
+				83E647BF2A86A1F20017496D /* Protocols */,
+				83E647C42A86A5E50017496D /* ApolloAPIClient.swift */,
+				83E647C62A86A6810017496D /* Constants.swift */,
+			);
+			path = APIClients;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83E6440B2A831D1B0017496D /* HabitTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E644362A831D1C0017496D /* Build configuration list for PBXNativeTarget "HabitTracker" */;
+			buildPhases = (
+				EDDD0B4B002D88C8281AC09E /* [CP] Check Pods Manifest.lock */,
+				83E644082A831D1B0017496D /* Sources */,
+				83E644092A831D1B0017496D /* Frameworks */,
+				83E6440A2A831D1B0017496D /* Resources */,
+				5E8BAF944BFD4C2B38B2E7C1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabitTracker;
+			productName = HabitTracker;
+			productReference = 83E6440C2A831D1B0017496D /* HabitTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83E644212A831D1C0017496D /* HabitTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E644392A831D1C0017496D /* Build configuration list for PBXNativeTarget "HabitTrackerTests" */;
+			buildPhases = (
+				2E625695C38E2CC115E11771 /* [CP] Check Pods Manifest.lock */,
+				83E6441E2A831D1C0017496D /* Sources */,
+				83E6441F2A831D1C0017496D /* Frameworks */,
+				83E644202A831D1C0017496D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83E644242A831D1C0017496D /* PBXTargetDependency */,
+			);
+			name = HabitTrackerTests;
+			productName = HabitTrackerTests;
+			productReference = 83E644222A831D1C0017496D /* HabitTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83E6442B2A831D1C0017496D /* HabitTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E6443C2A831D1C0017496D /* Build configuration list for PBXNativeTarget "HabitTrackerUITests" */;
+			buildPhases = (
+				41920824E96109311D942C4A /* [CP] Check Pods Manifest.lock */,
+				83E644282A831D1C0017496D /* Sources */,
+				83E644292A831D1C0017496D /* Frameworks */,
+				83E6442A2A831D1C0017496D /* Resources */,
+				6D81FDAD5C378F647B33A368 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83E6442E2A831D1C0017496D /* PBXTargetDependency */,
+			);
+			name = HabitTrackerUITests;
+			productName = HabitTrackerUITests;
+			productReference = 83E6442C2A831D1C0017496D /* HabitTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83E644042A831D1B0017496D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					83E6440B2A831D1B0017496D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					83E644212A831D1C0017496D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 83E6440B2A831D1B0017496D;
+					};
+					83E6442B2A831D1C0017496D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 83E6440B2A831D1B0017496D;
+					};
+				};
+			};
+			buildConfigurationList = 83E644072A831D1B0017496D /* Build configuration list for PBXProject "HabitTracker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83E644032A831D1B0017496D;
+			productRefGroup = 83E6440D2A831D1B0017496D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83E6440B2A831D1B0017496D /* HabitTracker */,
+				83E644212A831D1C0017496D /* HabitTrackerTests */,
+				83E6442B2A831D1C0017496D /* HabitTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83E6440A2A831D1B0017496D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E644202A831D1C0017496D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E6442A2A831D1C0017496D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E625695C38E2CC115E11771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitTrackerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41920824E96109311D942C4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitTracker-HabitTrackerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8BAF944BFD4C2B38B2E7C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitTracker/Pods-HabitTracker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitTracker/Pods-HabitTracker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitTracker/Pods-HabitTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D81FDAD5C378F647B33A368 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitTracker-HabitTrackerUITests/Pods-HabitTracker-HabitTrackerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HabitTracker-HabitTrackerUITests/Pods-HabitTracker-HabitTrackerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HabitTracker-HabitTrackerUITests/Pods-HabitTracker-HabitTrackerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDDD0B4B002D88C8281AC09E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HabitTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83E644082A831D1B0017496D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E647AF2A84C20E0017496D /* HabitCloseupViewControllerDelegate.swift in Sources */,
+				83E647CB2A86ADCB0017496D /* HabitListUpdateManager.swift in Sources */,
+				83E647A62A84C20E0017496D /* RoutinesCollectionHeaderView.swift in Sources */,
+				83E646EB2A84BFCA0017496D /* DeleteHabitMutation.graphql.swift in Sources */,
+				83E6479B2A84C20E0017496D /* HabitListViewModel.swift in Sources */,
+				83E647A42A84C20E0017496D /* HabitListViewController.swift in Sources */,
+				83E647C12A86A21A0017496D /* APIClientProtocol.swift in Sources */,
+				83E647AC2A84C20E0017496D /* HabitSummaryCollectionHeaderView.swift in Sources */,
+				83E646EC2A84BFCA0017496D /* RemoveHabitFromRoutineMutation.graphql.swift in Sources */,
+				83E647A52A84C20E0017496D /* HabitCloseupViewController.swift in Sources */,
+				83E647B12A84C20E0017496D /* HabitListViewControllerDelegate.swift in Sources */,
+				83E646ED2A84BFCA0017496D /* AddHabitToRoutineMutation.graphql.swift in Sources */,
+				83E647C72A86A6810017496D /* Constants.swift in Sources */,
+				83E647AB2A84C20E0017496D /* RoutinesCollectionViewAddCell.swift in Sources */,
+				83E647A02A84C20E0017496D /* AppDelegate.swift in Sources */,
+				83E647B42A84C20E0017496D /* SceneDelegate.swift in Sources */,
+				83E647AA2A84C20E0017496D /* RoutinesCollectionViewCell.swift in Sources */,
+				83E647A72A84C20E0017496D /* PlaceholderTextView.swift in Sources */,
+				83E646F52A84BFCA0017496D /* Routine.graphql.swift in Sources */,
+				83E647A32A84C20E0017496D /* MainTabBarViewController.swift in Sources */,
+				83E646FA2A84BFCA0017496D /* SchemaMetadata.graphql.swift in Sources */,
+				83E646F02A84BFCA0017496D /* GetRoutinesListQuery.graphql.swift in Sources */,
+				83E646F12A84BFCA0017496D /* GetHabitsListQuery.graphql.swift in Sources */,
+				83E646EE2A84BFCA0017496D /* UpdateHabitMutation.graphql.swift in Sources */,
+				83E646F62A84BFCA0017496D /* Mutation.graphql.swift in Sources */,
+				83E647A92A84C20E0017496D /* HabitCloseupView.swift in Sources */,
+				83E6479D2A84C20E0017496D /* UIColor.swift in Sources */,
+				83E646EA2A84BFCA0017496D /* CreateHabitMutation.graphql.swift in Sources */,
+				83E647AE2A84C20E0017496D /* HabitCloseupViewDelegate.swift in Sources */,
+				83E647AD2A84C20E0017496D /* RoutineHeaderDelegate.swift in Sources */,
+				83E647C52A86A5E50017496D /* ApolloAPIClient.swift in Sources */,
+				83E647B22A84C20E0017496D /* HabitSummaryDelegate.swift in Sources */,
+				83E646F32A84BFCA0017496D /* HabitResult.graphql.swift in Sources */,
+				83E646F92A84BFCA0017496D /* SchemaConfiguration.swift in Sources */,
+				83E646F72A84BFCA0017496D /* Query.graphql.swift in Sources */,
+				83E647A12A84C20E0017496D /* RoutinesViewController.swift in Sources */,
+				83E647C92A86AAC50017496D /* ModelTypes.swift in Sources */,
+				83E647B02A84C20E0017496D /* RoutineCellDelegate.swift in Sources */,
+				83E646F22A84BFCA0017496D /* HabitTrackerSchema.graphql.swift in Sources */,
+				83E646F42A84BFCA0017496D /* Habit.graphql.swift in Sources */,
+				83E647A82A84C20E0017496D /* HabitSummaryCollectionViewCell.swift in Sources */,
+				83E646EF2A84BFCA0017496D /* CompleteHabitMutation.graphql.swift in Sources */,
+				83E646F82A84BFCA0017496D /* RoutineResult.graphql.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E6441E2A831D1C0017496D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E644272A831D1C0017496D /* HabitTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E644282A831D1C0017496D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E644332A831D1C0017496D /* HabitTrackerUITestsLaunchTests.swift in Sources */,
+				83E644312A831D1C0017496D /* HabitTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83E644242A831D1C0017496D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E6440B2A831D1B0017496D /* HabitTracker */;
+			targetProxy = 83E644232A831D1C0017496D /* PBXContainerItemProxy */;
+		};
+		83E6442E2A831D1C0017496D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E6440B2A831D1B0017496D /* HabitTracker */;
+			targetProxy = 83E6442D2A831D1C0017496D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83E644342A831D1C0017496D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83E644352A831D1C0017496D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83E644372A831D1C0017496D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148184C28120CDADCA15B5D4 /* Pods-HabitTracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chrisAmezquita.HabitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83E644382A831D1C0017496D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67520D25D8A45541E88627F0 /* Pods-HabitTracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HabitTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chrisAmezquita.HabitTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83E6443A2A831D1C0017496D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E5F12E305993781C3943B7 /* Pods-HabitTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chrisAmezquita.HabitTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabitTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HabitTracker";
+			};
+			name = Debug;
+		};
+		83E6443B2A831D1C0017496D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22D3D90FDCA2A80A431C8CA /* Pods-HabitTrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chrisAmezquita.HabitTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HabitTracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HabitTracker";
+			};
+			name = Release;
+		};
+		83E6443D2A831D1C0017496D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B082B2D0A2E154A597B367A /* Pods-HabitTracker-HabitTrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chrisAmezquita.HabitTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HabitTracker;
+			};
+			name = Debug;
+		};
+		83E6443E2A831D1C0017496D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E79AE71275667CA4F530FA5 /* Pods-HabitTracker-HabitTrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = chrisAmezquita.HabitTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HabitTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83E644072A831D1B0017496D /* Build configuration list for PBXProject "HabitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E644342A831D1C0017496D /* Debug */,
+				83E644352A831D1C0017496D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E644362A831D1C0017496D /* Build configuration list for PBXNativeTarget "HabitTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E644372A831D1C0017496D /* Debug */,
+				83E644382A831D1C0017496D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E644392A831D1C0017496D /* Build configuration list for PBXNativeTarget "HabitTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E6443A2A831D1C0017496D /* Debug */,
+				83E6443B2A831D1C0017496D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E6443C2A831D1C0017496D /* Build configuration list for PBXNativeTarget "HabitTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E6443D2A831D1C0017496D /* Debug */,
+				83E6443E2A831D1C0017496D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83E644042A831D1B0017496D /* Project object */;
+}

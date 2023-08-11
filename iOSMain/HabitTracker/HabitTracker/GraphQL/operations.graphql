@@ -1,0 +1,93 @@
+query GetHabitsList {
+  getHabits {
+    success
+    errors
+    habits {
+      id
+      title
+      description
+      streak_count
+      last_completed
+      is_complete
+      routines {
+        id
+        title
+      }
+    }
+  }
+}
+
+query GetRoutinesList {
+    getRoutines {
+        success
+        errors
+        routines {
+            id
+            title
+            habits {
+                id
+                title
+                description
+                last_completed
+                streak_count
+            }
+        }
+    }
+}
+
+mutation createHabit($title: String!, $description: String!) {
+  createHabit(title: $title, description: $description) {
+    habits {
+        id
+    }
+    success
+    errors
+  }
+}
+
+mutation updateHabit($id: ID!, $title: String, $description: String, $lastCompleted: String) {
+    updateHabit(id: $id, title: $title, description: $description, lastCompleted: $lastCompleted) {
+        habits {
+            id
+        }
+        success
+        errors
+    }
+}
+
+mutation deleteHabit($id: ID!) {
+    deleteHabit(id: $id) {
+        habits {
+            id
+        }
+        success
+        errors
+    }
+}
+
+mutation completeHabit($id: ID!) {
+    completeHabit(id: $id) {
+        habits {
+            id
+            is_complete
+            streak_count
+            last_completed
+        }
+        success
+        errors
+    }
+}
+
+mutation addHabitToRoutine($id: ID!, $habit_id: ID!, $index: Int!) {
+    addHabitToRoutine(id: $id, habit_id: $habit_id, index: $index) {
+        success
+        errors
+    }
+}
+
+mutation removeHabitFromRoutine($habit_id: ID!, $routine_id: ID!) {
+    removeHabitFromRoutine(habit_id: $habit_id, routine_id: $routine_id) {
+        success
+        errors
+    }
+}

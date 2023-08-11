@@ -1,0 +1,49 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Habit {
+    id: ID!
+    last_completed: String
+    title: String!
+    description: String
+    streak_count: Int
+    is_complete: Boolean
+    routines: [Routine]
+}
+
+type Routine {
+    id: ID!
+    title: String!
+    habits: [Habit]
+}
+
+type HabitResult {
+    success: Boolean!
+    errors: [String]
+    habits: [Habit]
+}
+
+type RoutineResult {
+    success: Boolean!
+    errors: [String]
+    routines: [Routine]
+}
+
+type Query {
+    getHabits: HabitResult!
+    getRoutines: RoutineResult!
+}
+
+type Mutation {
+    createHabit(title: String!, description: String!): HabitResult!
+    updateHabit(id: ID!, title: String, description: String, lastCompleted: String): HabitResult!
+    deleteHabit(id: ID!): HabitResult!
+    completeHabit(id: ID!): HabitResult!
+
+    createRoutine(title: String!): RoutineResult!
+    updateRoutine(title: String): RoutineResult!
+    addHabitToRoutine(id: ID!, habit_id: ID!, index: Int!): RoutineResult!
+    removeHabitFromRoutine(habit_id: ID!, routine_id: ID!): RoutineResult!
+}
