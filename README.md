@@ -11,7 +11,7 @@
 2. UIKit and Core Animation
 3. Apollo (Swift GraphQL Client)
 
-### Backend
+### Back End
 4. Python
 5. Ariadne (Schema-First GraphQL)
 6. Flask w/ Flask-SQLAlchemy
